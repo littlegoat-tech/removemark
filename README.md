@@ -6,7 +6,7 @@ A free, browser-based watermark remover powered by AI. Get rid of watermarks and
   <img src="https://raw.githubusercontent.com/littlegoat-tech/removemark/main/.github/banner.png" alt="Removemark Banner" width="100%">
 </p>
 
-**[Try it live →](https://removemark.app)**
+**[Try it live →](https://removeimagemark.vercel.app)**
 
 ## Features
 
