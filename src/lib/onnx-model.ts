@@ -9,7 +9,7 @@ if (typeof window !== "undefined") {
   }
 }
 
-const MODEL_URL = "/models/lama_fp32.onnx";
+const MODEL_URL = "https://huggingface.co/Carve/LaMa-ONNX/resolve/main/lama_fp32.onnx";
 const MODEL_CACHE_KEY = "lama_fp32_model";
 const MODEL_VERSION = "1.0";
 
@@ -105,9 +105,7 @@ async function downloadModel(onProgress?: ProgressCallback): Promise<ArrayBuffer
   const response = await fetch(MODEL_URL);
   if (!response.ok) {
     if (response.status === 404) {
-      throw new Error(
-        `Model file not found. Please ensure ${MODEL_URL} exists in the public directory. See MODEL_SETUP.md for instructions.`,
-      );
+      throw new Error(`Model file not found at ${MODEL_URL}`);
     }
     throw new Error(`Failed to fetch model: ${response.statusText}`);
   }

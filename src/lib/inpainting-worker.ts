@@ -7,7 +7,7 @@ if (isDev) {
   ort.env.wasm.wasmPaths = "/onnxruntime-web/";
 }
 
-const MODEL_URL = "/models/lama_fp32.onnx";
+const MODEL_URL = "https://huggingface.co/Carve/LaMa-ONNX/resolve/main/lama_fp32.onnx";
 const MODEL_CACHE_KEY = "lama_fp32_model";
 const MODEL_VERSION = "1.0";
 const INPUT_SIZE = 512;
