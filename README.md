@@ -25,7 +25,7 @@ A free, browser-based watermark remover powered by AI. Get rid of watermarks and
 
 The app uses the LaMa inpainting model, which has been converted to ONNX format so it runs efficiently in your browser. The first time you visit, the model (about 200MB) gets downloaded and cached in your browser's IndexedDB, making subsequent loads much faster.
 
-## Technology
+## Tech used
 
 - **ONNX Runtime Web** — Runs the AI model directly in your browser via WebAssembly
 - **LaMa Model** — A state-of-the-art image inpainting model that removes objects and reconstructs backgrounds naturally
